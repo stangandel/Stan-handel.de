@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stan Handel – Hochwertige Produkte</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background: #005a8d;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .banner {
+      background: url('placeholder.png') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    section {
+      padding: 30px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      color: #005a8d;
+      border-bottom: 2px solid #005a8d;
+      padding-bottom: 10px;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .product {
+      background: white;
+      padding: 10px;
+      text-align: center;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+    }
+    .about {
+      background: #eef4f7;
+      padding: 20px;
+      border-radius: 5px;
+      margin-top: 40px;
+      text-align: center;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Stan Handel</h1>
+    <nav>
+      <a href="homepage.html">Startseite</a>
+      <a href="beauty.html">Beauty</a>
+      <a href="haushalt.html">Haushalt</a>
+      <a href="drogerie.html">Drogerie</a>
+      <a href="#about">Über Uns</a>
+    </nav>
+  </header>
+
+  <div class="banner">
+    Willkommen bei Stan Handel
+  </div>
+
+  <section>
+    <h2>Beauty</h2>
+    <div class="product-grid">
+      <div class="product"><img src="placeholder.png" alt="Beauty 1"/><p>Produkt 1</p></div>
+      <div class="product"><img src="placeholder.png" alt="Beauty 2"/><p>Produkt 2</p></div>
+      <div class="product"><img src="placeholder.png" alt="Beauty 3"/><p>Produkt 3</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Haushalt</h2>
+    <div class="product-grid">
+      <div class="product"><img src="placeholder.png" alt="Haushalt 1"/><p>Produkt 1</p></div>
+      <div class="product"><img src="placeholder.png" alt="Haushalt 2"/><p>Produkt 2</p></div>
+      <div class="product"><img src="placeholder.png" alt="Haushalt 3"/><p>Produkt 3</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Drogerie</h2>
+    <div class="product-grid">
+      <div class="product"><img src="placeholder.png" alt="Drogerie 1"/><p>Produkt 1</p></div>
+      <div class="product"><img src="placeholder.png" alt="Drogerie 2"/><p>Produkt 2</p></div>
+      <div class="product"><img src="placeholder.png" alt="Drogerie 3"/><p>Produkt 3</p></div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>Über Stan Handel</h2>
+    <p>Stan Handel steht für Zuverlässigkeit, Qualität und eine sorgfältige Produktauswahl. Wir arbeiten mit Partnern europaweit und bieten Lösungen für Privat- und Geschäftskunden.</p>
+  </section>
+
+  <footer>
+    © 2025 Stan Handel – Alle Rechte vorbehalten.
+  </footer>
+</body>
+</html>
