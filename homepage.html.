@@ -1,65 +1,70 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stan Handel – Startseite</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8f8f8; color: #333; }
-        header { background-color: #2c3e50; color: white; padding: 20px; text-align: center; }
-        nav { background-color: #34495e; display: flex; justify-content: center; padding: 10px 0; }
-        nav a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; }
-        nav a:hover { text-decoration: underline; }
-        main { padding: 40px 20px; max-width: 1000px; margin: auto; background: white; }
-        h1, h2 { color: #2c3e50; }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
-        th { background-color: #f0f0f0; }
-        footer { background-color: #eee; padding: 20px; text-align: center; font-size: 14px; color: #666; margin-top: 40px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stan Handel – Ihr B2B-Partner</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0, 47, 95, 0.5), rgba(0, 47, 95, 0.5)),
+        url('https://images.unsplash.com/photo-1581093588401-12c64349ed1c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 1.4rem;
+      margin-top: 15px;
+    }
+
+    .tagline {
+      margin-top: 30px;
+      font-size: 1.2rem;
+      color: #e0e0e0;
+    }
+
+    .welcome {
+      margin-top: 60px;
+      font-size: 4rem;
+      color: rgba(255, 255, 255, 0.7);
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+      .welcome {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Stan Handel</h1>
-    </header>
-    <nav>
-        <a href="#beauty">Beauty</a>
-        <a href="#haushalt">Haushalt</a>
-        <a href="#drogerie">Drogerie</a>
-    </nav>
-    <main>
-        <h2>Willkommen bei Stan Handel</h2>
-        <p>
-            Als Handelsunternehmen mit klarer Ausrichtung legen wir Wert auf professionelle Abläufe, zuverlässige Kommunikation und langfristige Zusammenarbeit.<br><br>
-            Unser Ziel ist es, nachhaltige Beziehungen zu Marken und Lieferanten aufzubauen – fair, transparent und strukturiert.
-        </p>
-
-        <h2 id="beauty">Beauty</h2>
-        <table>
-            <tr><th>Produkt</th><th>Marke</th></tr>
-            <tr><td>Henna Augenbrauenfarbe</td><td>Revers</td></tr>
-            <tr><td>Wimpernserum Vegan</td><td>Satin Naturel</td></tr>
-            <tr><td>Anti-Aging Creme</td><td>Colibri</td></tr>
-        </table>
-
-        <h2 id="haushalt">Küche & Haushalt</h2>
-        <table>
-            <tr><th>Produkt</th><th>Marke</th></tr>
-            <tr><td>Profi Cuttermesser</td><td>Rockro</td></tr>
-            <tr><td>Universal Schrauben</td><td>Spax</td></tr>
-            <tr><td>Duschkopf EcoSmart</td><td>Hansgrohe</td></tr>
-        </table>
-
-        <h2 id="drogerie">Drogerie & Körperpflege</h2>
-        <table>
-            <tr><th>Produkt</th><th>Marke</th></tr>
-            <tr><td>Duschgel Sensitive</td><td>Nivea</td></tr>
-            <tr><td>Ohrstöpsel MotoSafe</td><td>Alpine</td></tr>
-            <tr><td>Insektenschutz Fenster</td><td>Tesa</td></tr>
-        </table>
-    </main>
-    <footer>
-        &copy; 2025 Stan Handel – Alle Rechte vorbehalten
-    </footer>
+  <header class="hero">
+    <h1>Stan Handel</h1>
+    <p class="subtitle">Ihre Quelle für hochwertige Produkte</p>
+    <p class="tagline">Entdecken Sie Vielfalt, Qualität und Zuverlässigkeit – alles an einem Ort.</p>
+    <div class="welcome">Willkommen</div>
+  </header>
 </body>
 </html>
