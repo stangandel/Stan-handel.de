@@ -1,110 +1,141 @@
 
-body {
+/* ========== RESET ========== */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== STRUCTURE ========== */
+body {
   font-family: Arial, sans-serif;
-  background: #fff;
-  color: #222;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
 }
 
-a {
-  text-decoration: none;
-  color: #0052cc;
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-/* ======== Navbar ======== */
-.navbar {
-  background-color: #002855;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 24px;
+/* ========== HEADER ========== */
+header {
+  background-color: #002d5e;
+  padding: 10px 0;
+  color: #fff;
 }
 
 .logo {
-  color: white;
-  font-weight: bold;
+  float: left;
   font-size: 20px;
+  font-weight: bold;
+  padding-left: 20px;
 }
 
-.nav-links {
+nav {
+  float: right;
+  padding-right: 20px;
+}
+
+.menu {
   list-style: none;
   display: flex;
   gap: 20px;
 }
 
-.nav-links li {
+.menu li {
   position: relative;
 }
 
-.nav-links a {
-  color: white;
-  font-weight: 500;
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
 }
 
-.dropdown-menu {
+.submenu {
   display: none;
   position: absolute;
-  top: 30px;
-  background-color: #003b80;
-  list-style: none;
+  background: #004080;
   padding: 10px;
-  z-index: 1000;
+  list-style: none;
+  top: 100%;
+  left: 0;
 }
 
-.dropdown:hover .dropdown-menu {
+.menu li:hover .submenu {
   display: block;
 }
 
-.dropdown-menu li a {
-  color: white;
-  display: block;
-  padding: 5px 10px;
+.submenu li {
+  margin-bottom: 8px;
 }
 
-/* ======== Hero imagine full width – proporțională ======== */
+.submenu a {
+  color: #fff;
+}
+
+/* ========== HERO SECTION ========== */
 .hero-img-full {
-  text-align: center;
-  padding: 0;
-  margin: 0;
+  width: 100%;
+  max-height: 70vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
 }
 
 .hero-img-full img {
+  max-height: 70vh;
   width: auto;
-  max-width: 100%;
   height: auto;
+  object-fit: contain;
   display: block;
-  margin: 0 auto;
 }
 
-/* ======== Über uns ======== */
+/* ========== ABOUT SECTION ========== */
 .about {
-  padding: 40px 20px;
+  padding: 40px 0;
+  background-color: #fff;
 }
 
-.about-container {
+.about .container {
   display: flex;
-  align-items: center;
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
   flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.about-image {
-  max-width: 400px;
-  width: 100%;
-  border-radius: 12px;
-}
-
-.about-text {
+.about-left {
   flex: 1;
+  font-size: 14px;
+  padding-top: 10px;
+  color: #555;
 }
 
-/* ======== Footer ======== */
+.about-right {
+  flex: 3;
+}
+
+.about-right h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #002d5e;
+}
+
+.about-right p {
+  font-size: 15px;
+  color: #333;
+}
+
+/* ========== FOOTER ========== */
 footer {
-  background-color: #002855;
-  color: white;
+  background-color: #002d5e;
+  color: #fff;
   text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+  padding: 15px 0;
+  font-size: 13px;
 }
