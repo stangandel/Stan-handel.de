@@ -61,20 +61,19 @@ a {
   padding: 5px 10px;
 }
 
-/* ======== Hero full-width image ======== */
+/* ======== Hero imagine full width – proporțională ======== */
 .hero-img-full {
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
+  text-align: center;
   padding: 0;
-  display: block;
+  margin: 0;
 }
 
 .hero-img-full img {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   height: auto;
   display: block;
-  object-fit: cover;
+  margin: 0 auto;
 }
 
 /* ======== Über uns ======== */
