@@ -1,196 +1,48 @@
-/* Linie 1 – Stiluri generale */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #222;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* Navbar */
-.navbar {
-  background-color: #002b5e;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-}
-
-.logo {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: white;
-}
-
-.nav-links {
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links li {
-  position: relative;
-}
-
-.nav-links a {
-  color: white;
-  font-weight: bold;
-  padding: 8px;
-}
-
-/* Dropdown */
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: #004080;
-  top: 100%;
-  left: 0;
-  z-index: 999;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu li {
-  padding: 10px;
-}
-
-.dropdown-menu li:hover {
-  background-color: #0059b3;
-}
-
-/* Hero Section */
+/* Hero Section – imagine <img> + text absolut */
 .hero {
-  width: 100%;
-  height: 80vh;
-  background-image: url("../images/hero-final.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
-.hero-text {
-  text-align: center;
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 80vh;
+}
+
+.hero-text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
+  text-align: center;
+  padding: 20px 30px;
   background-color: rgba(0, 0, 0, 0.4);
-  padding: 20px 40px;
   border-radius: 10px;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+  max-width: 90%;
 }
 
-.hero-text h1 {
-  font-size: 3.5em;
-  margin: 0 0 10px;
+.hero-text-overlay h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
 }
 
-.hero-text p {
-  font-size: 1.5em;
+.hero-text-overlay p {
+  font-size: 1.3em;
   margin: 0;
 }
 
-/* Über uns */
-.about {
-  padding: 60px 30px;
-  background-color: #f5f5f5;
-}
-
-.about-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.about-image {
-  flex: 1 1 300px;
-  max-width: 500px;
-  border-radius: 12px;
-}
-
-.about-text {
-  flex: 2 1 400px;
-}
-
-.about-text h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.about-text p {
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-
-/* Formular */
-.kontaktformular {
-  padding: 60px 30px;
-  background-color: #ffffff;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.kontaktformular h2 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.kontaktformular form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.kontaktformular input,
-.kontaktformular textarea {
-  padding: 10px;
-  font-size: 1em;
-  border: 1px solid #aaa;
-  border-radius: 6px;
-}
-
-.kontaktformular button {
-  background-color: #002b5e;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 6px;
-  font-size: 1em;
-  cursor: pointer;
-}
-
-.kontaktformular button:hover {
-  background-color: #00509e;
-}
-
-/* Confirmare */
-.confirmation {
-  text-align: center;
-  padding: 20px;
-  background-color: #e6ffe6;
-  color: #006600;
-  font-weight: bold;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #002b5e;
-  color: white;
+/* Responsive fix */
+@media (max-width: 768px) {
+  .hero-text-overlay h1 {
+    font-size: 2em;
+  }
+  .hero-text-overlay p {
+    font-size: 1em;
+  }
 }
