@@ -1,48 +1,130 @@
-/* Hero Section – imagine <img> + text absolut */
-.hero {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
+/* ======== Layout general ======== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #222;
 }
 
+a {
+  text-decoration: none;
+  color: #0052cc;
+}
+
+/* ======== Navbar ======== */
+.navbar {
+  background-color: #002855;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: white;
+  font-weight: 500;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  background-color: #003b80;
+  list-style: none;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  color: white;
+  display: block;
+  padding: 5px 10px;
+}
+
+/* ======== Hero image ======== */
 .hero-img {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover;
-  max-height: 80vh;
 }
 
-.hero-text-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/* ======== Über uns ======== */
+.about {
+  padding: 40px 20px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+/* ======== Formular ======== */
+.kontaktformular {
+  padding: 40px 20px;
+  background-color: #f3f3f3;
+}
+
+.kontaktformular form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.kontaktformular input,
+.kontaktformular textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.kontaktformular button {
+  background-color: #002855;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* ======== Footer ======== */
+footer {
+  background-color: #002855;
   color: white;
   text-align: center;
-  padding: 20px 30px;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
-  max-width: 90%;
-}
-
-.hero-text-overlay h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
-}
-
-.hero-text-overlay p {
-  font-size: 1.3em;
-  margin: 0;
-}
-
-/* Responsive fix */
-@media (max-width: 768px) {
-  .hero-text-overlay h1 {
-    font-size: 2em;
-  }
-  .hero-text-overlay p {
-    font-size: 1em;
-  }
+  padding: 20px;
+  margin-top: 40px;
 }
