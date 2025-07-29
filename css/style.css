@@ -69,18 +69,17 @@ ul {
   background-color: #0059b3;
 }
 
-/* Hero image responsive */
+/* Hero ca background responsive */
 .hero {
   width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.hero-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  max-height: 90vh;
+  height: 80vh;
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Über uns */
