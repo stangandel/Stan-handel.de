@@ -61,13 +61,15 @@ a {
   padding: 5px 10px;
 }
 
-/* ======== Hero ca fundal CSS ======== */
+/* ======== Hero image la dimensiune originală ======== */
 .hero-section {
-  height: 90vh;
   background-image: url("../images/hero.jpg");
-  background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  min-height: 600px; /* sau 500px dacă vrei mai mic */
 }
 
 /* ======== Über uns ======== */
