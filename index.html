@@ -2,24 +2,27 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stan Handel</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stan Handel – B2B Großhandel</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- Navigație -->
   <header>
-    <nav class="nav">
-      <ul>
+    <nav class="navbar">
+      <div class="logo">Stan Handel</div>
+      <ul class="nav-links">
         <li><a href="index.html">Startseite</a></li>
         <li class="dropdown">
           <a href="#">Kategorien ▼</a>
-          <ul class="dropdown-content">
+          <ul class="dropdown-menu">
             <li><a href="beauty.html">Beauty</a></li>
             <li><a href="haushalt.html">Haushalt</a></li>
             <li><a href="haustiere.html">Haustiere</a></li>
             <li><a href="baumarkt.html">Baumarkt</a></li>
-            <li><a href="petsupplies.html">Pet Supplies</a></li>
-            <li><a href="hausundgarten.html">Haus & Garten</a></li>
+            <li><a href="pet-supplies.html">Pet Supplies</a></li>
+            <li><a href="haus-garten.html">Haus & Garten</a></li>
           </ul>
         </li>
         <li><a href="kontakt.html">Kontakt</a></li>
@@ -28,25 +31,50 @@
     </nav>
   </header>
 
-  <div class="hero">
-    <img src="images/hero.jpg" alt="Stan Handel Hero Image" />
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="images/hero.jpg" alt="Lagerhalle" class="hero-image">
     <div class="hero-text">
       <h1>Willkommen</h1>
-      <p>Entdecken Sie Vielfalt, Qualität und Zuverlässigkeit – alles an einem Ort.</p>
+      <p>Entdecken Sie Vielfalt, Qualität und Zuverlässigkeit im Handel mit Markenprodukten.</p>
     </div>
-  </div>
+  </section>
 
-  <section class="ueber-uns">
-    <h2>Über uns</h2>
-    <p>
-      Stan Handel ist ein inhabergeführtes Unternehmen mit Sitz in Hanau, das sich auf den professionellen Vertrieb über Amazon & eBay spezialisiert hat.
-      Mit einem klaren Fokus auf Struktur, Nachhaltigkeit und Markenpartnerschaften bauen wir langfristige Beziehungen zu Herstellern und Distributoren auf.
-      Vertrauen, Respekt und Skalierung – das sind unsere Leitprinzipien für die Zukunft.
-    </p>
+  <!-- Über uns -->
+  <section class="about">
+    <div class="about-container">
+      <img src="images/ueber-uns.jpg" alt="Team Stan Handel" class="about-image">
+      <div class="about-text">
+        <h2>Über uns</h2>
+        <p>Stan Handel ist ein wachsendes Handelsunternehmen mit Fokus auf den B2B-Bereich. Wir arbeiten eng mit Marken und Herstellern zusammen, um hochwertige Produkte über Plattformen wie Amazon und eBay zu vertreiben. Unser Ziel ist langfristige Zusammenarbeit, Transparenz und Verlässlichkeit – für nachhaltigen Erfolg auf beiden Seiten.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontaktformular -->
+  <section class="kontaktformular">
+    <h2>Kontaktieren Sie uns</h2>
+    <form name="kontakt" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="kontakt" />
+      <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+      <p><label>Name: <input type="text" name="name" required></label></p>
+      <p><label>Firma: <input type="text" name="firma" required></label></p>
+      <p><label>Email: <input type="email" name="email" required></label></p>
+      <p><label>USt-ID (optional): <input type="text" name="ustid"></label></p>
+      <p><label>Nachricht: <textarea name="message" required></textarea></label></p>
+      <p><button type="submit">Senden</button></p>
+    </form>
+  </section>
+
+  <!-- Confirmare -->
+  <section class="confirmation">
+    <p>Vielen Dank – Ihre Nachricht wurde erfolgreich übermittelt.</p>
   </section>
 
   <footer>
-    <p>© 2025 Stan Handel · <a href="kontakt.html">Kontakt</a> · <a href="impressum.html">Impressum</a></p>
+    <p>&copy; 2025 Stan Handel – Alle Rechte vorbehalten.</p>
   </footer>
+
 </body>
 </html>
+
