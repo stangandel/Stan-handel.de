@@ -61,17 +61,20 @@ a {
   padding: 5px 10px;
 }
 
-/* ======== Hero full-width img ======== */
+/* ======== Hero full-width image ======== */
 .hero-img-full {
   width: 100%;
+  max-width: 100%;
   margin: 0;
   padding: 0;
+  display: block;
 }
 
 .hero-img-full img {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
 }
 
 /* ======== Über uns ======== */
@@ -96,34 +99,6 @@ a {
 
 .about-text {
   flex: 1;
-}
-
-/* ======== Formular (pentru kontakt.html) ======== */
-.kontaktformular {
-  padding: 40px 20px;
-  background-color: #f3f3f3;
-}
-
-.kontaktformular form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.kontaktformular input,
-.kontaktformular textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.kontaktformular button {
-  background-color: #002855;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
 }
 
 /* ======== Footer ======== */
