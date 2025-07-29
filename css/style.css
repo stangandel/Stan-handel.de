@@ -61,17 +61,15 @@ a {
   padding: 5px 10px;
 }
 
-/* ======== Hero: Imagine afișată complet ======== */
-.hero-img-wrapper {
-  display: flex;
-  justify-content: center;
-  padding: 40px 0;
-  background-color: #fff;
+/* ======== Hero full-width img ======== */
+.hero-img-full {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.hero-img {
+.hero-img-full img {
   width: 100%;
-  max-width: 1200px;
   height: auto;
   display: block;
 }
@@ -100,7 +98,7 @@ a {
   flex: 1;
 }
 
-/* ======== Formular ======== */
+/* ======== Formular (pentru kontakt.html) ======== */
 .kontaktformular {
   padding: 40px 20px;
   background-color: #f3f3f3;
