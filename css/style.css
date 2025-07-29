@@ -61,15 +61,15 @@ a {
   padding: 5px 10px;
 }
 
-/* ======== Hero image la dimensiune originală ======== */
-.hero-section {
-  background-image: url("../images/hero.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: auto;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  min-height: 600px; /* sau 500px dacă vrei mai mic */
+/* ======== Hero imagine normală ======== */
+.hero-img-wrapper {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* ======== Über uns ======== */
