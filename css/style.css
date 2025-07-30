@@ -1,90 +1,27 @@
+/* style.css */
 
-/* === GENERAL === */
+/* Reset margini + font basic */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-}
-
-/* === NAVBAR === */
-.navbar {
-  background-color: #002147;
-  padding: 15px;
-}
-
-.nav-links {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 25px;
-  list-style: none;
-  margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #ffffff;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  margin-top: 5px;
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content li {
-  padding: 10px 15px;
-  white-space: nowrap;
-}
-
-.dropdown-content li a {
-  color: #002147;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content li a:hover {
-  background-color: #f4f4f4;
-}
-
-/* === HERO IMAGE === */
-.hero {
+/* Container cu două coloane fixe – nu se sparge pe mobil */
+.hero-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;         /* nu permite colapsare verticală */
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 400px; /* REDUS de la 700px */
-  background-image: url('../images/hero-final.jpg');
-  background-size: contain; /* Afișează întreaga imagine fără tăiere */
-  background-repeat: no-repeat;
-  background-position: center center;
-  margin-bottom: 40px;
+  overflow-x: auto;          /* scroll orizontal dacă ecranul e prea mic */
 }
 
-@media screen and (max-width: 768px) {
-  .hero {
-    height: 250px;
-    background-size: contain;
-  }
-}
-
-/* === FOOTER === */
-footer {
-  background-color: #002147;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  font-size: 14px;
-}
-
-.footer-content a {
-  color: white;
-  text-decoration: underline;
+/* Imaginile din stânga și dreapta */
+.hero-image {
+  width: 50%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
