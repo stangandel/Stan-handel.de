@@ -1,22 +1,18 @@
-/* style.css */
 
-body {
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stan Handel – Homepage</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
 
-.hero-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: 100vw;
-  height: auto;
-  overflow-x: auto;
-}
+  <div class="hero-container">
+    <img src="images/hero.jpg" alt="Inventory Management" class="hero-img">
+    <img src="images/hero-final-arbeiter.jpg" alt="Mitarbeiter mit Text" class="hero-img">
+  </div>
 
-.hero-image {
-  width: 50vw;
-  height: auto;
-  object-fit: contain;
-  display: block;
-}
+</body>
+</html>
