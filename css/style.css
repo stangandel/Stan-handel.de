@@ -1,24 +1,47 @@
 
 
-/* style.css */
-
+/* Reset de bază */
 body {
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.hero-container {
+/* Secțiune principală: imagine + bloc muncitori */
+.hero-section {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  width: 100vw;
+  align-items: center;
+  justify-content: flex-start;
   height: 100vh;
-  overflow-x: auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.hero-img {
-  width: 50vw;
-  height: 100%;
-  object-fit: cover;
+/* Imaginea mare din stânga */
+.left-image img {
+  max-height: 90vh;
+  width: auto;
   display: block;
+}
+
+/* Blocul din dreapta */
+.right-block {
+  margin-left: auto;
+  text-align: center;
+}
+
+.arbeiter-img {
+  width: auto;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+.arbeiter-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 15px;
+  max-width: 400px;
 }
