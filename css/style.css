@@ -1,24 +1,24 @@
+
 /* style.css */
 
-/* Reset margini + font basic */
+/* Reset de bază */
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
 }
 
-/* Container cu două coloane fixe – nu se sparge pe mobil */
+/* Container cu două imagini alăturate, inclusiv pe mobil */
 .hero-row {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;         /* nu permite colapsare verticală */
+  flex-wrap: nowrap;         /* NU permite colapsare pe verticală */
   justify-content: center;
   align-items: center;
   width: 100%;
-  overflow-x: auto;          /* scroll orizontal dacă ecranul e prea mic */
+  overflow-x: auto;          /* scroll orizontal dacă nu încap */
 }
 
-/* Imaginile din stânga și dreapta */
+/* Stil imagine */
 .hero-image {
   width: 50%;
   height: auto;
