@@ -1,27 +1,23 @@
-
-/* style.css */
-
-/* Reset de bază */
 body {
   margin: 0;
   padding: 0;
 }
 
-/* Container cu două imagini alăturate, inclusiv pe mobil */
 .hero-row {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;         /* NU permite colapsare pe verticală */
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   width: 100%;
-  overflow-x: auto;          /* scroll orizontal dacă nu încap */
+  overflow-x: auto;
+  height: 100vh; /* Încadrăm vertical la înălțimea ecranului */
 }
 
-/* Stil imagine */
 .hero-image {
-  width: 50%;
-  height: auto;
-  display: block;
+  height: 100%;
+  width: auto;
+  max-height: 100vh;
   object-fit: cover;
+  display: block;
 }
