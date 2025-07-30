@@ -1,47 +1,83 @@
+
+
 body {
   margin: 0;
   padding: 0;
+  background-color: #0d2b5b;
   font-family: Arial, sans-serif;
-  background-color: #0d2b5b; /* albastru profesional */
   color: white;
 }
 
-/* Imaginea cu tableta */
-.image-left img {
-  width: auto;
-  max-height: 90vh;
-  display: block;
-  margin-left: 0;
+.homepage-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 60px;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
-/* Bloc muncitori + text */
-.centered-block {
-  text-align: center;
-  padding: 40px 20px;
+/* Poza cu tableta – centrată vertical */
+.left-block {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.tablet-img {
+  max-height: 90vh;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Poza cu muncitorii + text – pe mijloc, mai sus */
+.right-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* poziționează mai sus */
+  padding-top: 20px;
 }
 
 .arbeiter-img {
-  height: 400px;
+  height: 360px;
   width: auto;
   display: block;
-  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
 }
 
 .arbeiter-text {
-  margin-top: 20px;
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
-  color: white;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 500px;
+  line-height: 1.4;
 }
 
-/* Responsive pentru telefon și tabletă */
+/* Responsive mobil */
 @media (max-width: 768px) {
-  .image-left img {
-    width: 100%;
+  .homepage-container {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+    gap: 40px;
+  }
+
+  .left-block,
+  .right-block {
+    justify-content: center;
+  }
+
+  .tablet-img {
+    width: 90%;
     height: auto;
     max-height: none;
   }
