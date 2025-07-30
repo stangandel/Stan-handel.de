@@ -38,7 +38,7 @@ body {
   margin-right: auto;
 }
 
-/* RESPONSIVE: pentru telefon și ecrane mici */
+/* Responsive pentru telefon și tabletă */
 @media (max-width: 768px) {
   .image-left img {
     width: 100%;
@@ -56,3 +56,4 @@ body {
     padding: 0 10px;
   }
 }
+
