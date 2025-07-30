@@ -1,54 +1,34 @@
-
-
-/* Reset de bază */
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  background-color: white;
 }
 
-/* Secțiune principală: poză mare stânga + muncitori dreapta */
-.hero-section {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
-  width: 100vw;
-  height: 100vh;
-  box-sizing: border-box;
-}
-
-/* Imaginea cu tableta – parte stângă */
-.left-image img {
-  max-height: 100vh;
+/* Imaginea cu tableta pe stânga – rămâne mare */
+.image-left img {
   width: auto;
+  max-height: 90vh;
   display: block;
+  margin-left: 0;
 }
 
-/* Blocul muncitori – dreapta, centrat */
-.right-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100%;
+/* Blocul muncitori – centrat pe toată lățimea */
+.centered-block {
+  text-align: center;
+  padding: 40px 20px;
 }
 
-/* Imaginea cu muncitori – dimensiune fixă */
 .arbeiter-img {
   height: 400px;
   width: auto;
   display: block;
-  margin-bottom: 20px;
+  margin: 0 auto;
 }
 
-/* Textul de sub imagine */
 .arbeiter-text {
+  margin-top: 20px;
   font-size: 1.2rem;
   font-weight: bold;
   color: #333;
-  text-align: center;
-  max-width: 500px;
-  padding: 0 20px;
 }
