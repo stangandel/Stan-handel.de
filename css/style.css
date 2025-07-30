@@ -1,5 +1,5 @@
 
-/* === LAYOUT GENERAL === */
+/* === GENERAL === */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -60,11 +60,19 @@ body {
 /* === HERO IMAGE === */
 .hero {
   width: 100%;
-  height: 700px;
+  height: 400px; /* REDUS de la 700px */
   background-image: url('../images/hero-final.jpg');
-  background-size: cover;
+  background-size: contain; /* Afișează întreaga imagine fără tăiere */
   background-repeat: no-repeat;
   background-position: center center;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 250px;
+    background-size: contain;
+  }
 }
 
 /* === FOOTER === */
