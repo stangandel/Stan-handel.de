@@ -8,18 +8,19 @@ body {
   color: white;
 }
 
+/* Layout general homepage */
 .homepage-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   gap: 60px;
   padding: 40px;
   box-sizing: border-box;
 }
 
-/* Poza cu tableta – centrată vertical */
+/* Imaginea cu tableta (stânga) */
 .left-block {
   flex: 1;
   display: flex;
@@ -36,14 +37,13 @@ body {
   border-radius: 12px;
 }
 
-/* Poza cu muncitorii + text – pe mijloc, mai sus */
+/* Imaginea cu muncitorii (dreapta) */
 .right-block {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* poziționează mai sus */
-  padding-top: 20px;
+  justify-content: center; /* centru pe verticală */
 }
 
 .arbeiter-img {
@@ -62,12 +62,25 @@ body {
   line-height: 1.4;
 }
 
-/* Responsive mobil */
+/* Footer jos */
+footer {
+  background-color: #081a35;
+  padding: 15px 0;
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Responsive pentru mobil */
 @media (max-width: 768px) {
   .homepage-container {
     flex-direction: column;
     padding: 20px;
-    height: auto;
     gap: 40px;
   }
 
@@ -92,4 +105,3 @@ body {
     padding: 0 10px;
   }
 }
-
