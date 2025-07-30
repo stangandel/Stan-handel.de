@@ -2,10 +2,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: white;
+  background-color: #0d2b5b; /* albastru profesional */
+  color: white;
 }
 
-/* Imaginea cu tableta pe stânga – rămâne mare */
+/* Imaginea cu tableta */
 .image-left img {
   width: auto;
   max-height: 90vh;
@@ -13,7 +14,7 @@ body {
   margin-left: 0;
 }
 
-/* Blocul muncitori – centrat pe toată lățimea */
+/* Bloc muncitori + text */
 .centered-block {
   text-align: center;
   padding: 40px 20px;
@@ -30,5 +31,28 @@ body {
   margin-top: 20px;
   font-size: 1.2rem;
   font-weight: bold;
-  color: #333;
+  text-align: center;
+  color: white;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* RESPONSIVE: pentru telefon și ecrane mici */
+@media (max-width: 768px) {
+  .image-left img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+
+  .arbeiter-img {
+    width: 90%;
+    height: auto;
+  }
+
+  .arbeiter-text {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
 }
