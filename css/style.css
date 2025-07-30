@@ -1,117 +1,133 @@
 
-/* Linie 1 */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* === Stil General === */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f6f9;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f9fc;
   color: #1a1a1a;
 }
 
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-/* Linie 15 */
+/* === Navigație === */
 .navbar {
-  background-color: #002147;
-  padding: 15px 0;
+  background-color: #002855;
+  padding: 10px 0;
 }
-
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+.nav-links {
+  list-style: none;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 30px;
 }
-
+.nav-links li {
+  position: relative;
+}
 .nav-links a {
-  margin: 0 16px;
+  text-decoration: none;
+  color: white;
   font-weight: 500;
 }
-
-.dropdown {
-  position: relative;
-  display: inline-block;
+.nav-links a:hover {
+  text-decoration: underline;
 }
-
-.dropdown-content {
+.dropdown-menu {
   display: none;
   position: absolute;
-  background-color: #002147;
-  min-width: 160px;
-  z-index: 1;
+  top: 30px;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 10;
 }
-
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-menu {
   display: block;
 }
-
-.dropdown-content a {
-  display: block;
-  padding: 10px 16px;
+.dropdown-menu li {
+  padding: 5px 15px;
+}
+.dropdown-menu a {
+  color: #002855;
 }
 
-/* Linie 50 */
+/* === Secțiune Hero === */
+.hero-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
 .hero-image {
   width: 100%;
-  max-width: 1600px;
-  height: auto;
-  display: block;
-  margin: 40px auto 20px auto;
+  max-width: 500px;
   border-radius: 8px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.hero-text h1 {
+  font-size: 2rem;
+  color: #002855;
+}
+.hero-text p {
+  font-size: 1.2rem;
+  color: #444;
 }
 
+/* === Über uns === */
 .ueber-uns {
-  text-align: center;
-  max-width: 800px;
-  margin: 40px auto;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px;
 }
-
-.ueber-uns h2 {
-  font-size: 24px;
-  margin-bottom: 16px;
-  color: #002147;
+.about-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
 }
-
-.ueber-uns p {
-  font-size: 16px;
+.about-text {
+  max-width: 700px;
+}
+.about-text h2 {
+  color: #002855;
+  font-size: 1.5rem;
+}
+.about-text p {
   line-height: 1.6;
+  color: #333;
 }
 
-/* Linie 75 */
-.footer {
-  background-color: #002147;
+/* === Footer === */
+footer {
+  background-color: #002855;
   color: white;
-  padding: 20px 0;
   text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+footer a {
+  color: white;
+  text-decoration: underline;
 }
 
-.footer-container a {
-  color: #ffffff;
-  margin-left: 10px;
-  font-size: 14px;
-}
-
+/* === Responsive === */
 @media (max-width: 768px) {
+  .hero-content,
+  .ueber-uns {
+    flex-direction: column;
+    align-items: center;
+  }
   .nav-links {
     flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-links a {
-    margin: 10px 0;
-  }
-
-  .hero-image {
-    width: 100%;
-    border-radius: 0;
+    gap: 10px;
+    text-align: center;
   }
 }
