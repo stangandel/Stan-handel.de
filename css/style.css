@@ -1,3 +1,5 @@
+/* style.css */
+
 body {
   margin: 0;
   padding: 0;
@@ -7,17 +9,14 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  width: 100vw;
+  height: auto;
   overflow-x: auto;
-  height: 100vh; /* Încadrăm vertical la înălțimea ecranului */
 }
 
 .hero-image {
-  height: 100%;
-  width: auto;
-  max-height: 100vh;
-  object-fit: cover;
+  width: 50vw;
+  height: auto;
+  object-fit: contain;
   display: block;
 }
