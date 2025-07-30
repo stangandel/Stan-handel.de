@@ -1,17 +1,59 @@
-/* HERO IMAGE */
+
+/* HERO IMAGE FIXED */
 .hero {
   width: 100%;
-  height: auto;
+  height: 700px;
   background-image: url('../images/hero-final.jpg');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
-  aspect-ratio: 3 / 1;
+  background-position: center center;
 }
 
-@media screen and (max-width: 768px) {
-  .hero {
-    background-size: cover;
-    aspect-ratio: auto;
-  }
+/* NAVBAR (minimal fix) */
+.navbar {
+  background-color: #002147;
+  padding: 15px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  margin-top: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li {
+  padding: 10px 15px;
+}
+
+.footer-content {
+  background-color: #002147;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.footer-content a {
+  color: white;
+  text-decoration: underline;
 }
