@@ -7,41 +7,48 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Secțiune principală: imagine + bloc muncitori */
+/* Secțiune principală: poză mare stânga + muncitori dreapta */
 .hero-section {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch;
   justify-content: flex-start;
+  width: 100vw;
   height: 100vh;
-  padding: 20px;
   box-sizing: border-box;
 }
 
-/* Imaginea mare din stânga */
+/* Imaginea cu tableta – parte stângă */
 .left-image img {
-  max-height: 90vh;
+  max-height: 100vh;
   width: auto;
   display: block;
 }
 
-/* Blocul din dreapta */
+/* Blocul muncitori – dreapta, centrat */
 .right-block {
-  margin-left: auto;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
 }
 
+/* Imaginea cu muncitori – dimensiune fixă */
 .arbeiter-img {
-  width: auto;
   height: 400px;
+  width: auto;
   display: block;
-  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
+/* Textul de sub imagine */
 .arbeiter-text {
   font-size: 1.2rem;
   font-weight: bold;
   color: #333;
-  margin-top: 15px;
-  max-width: 400px;
+  text-align: center;
+  max-width: 500px;
+  padding: 0 20px;
 }
